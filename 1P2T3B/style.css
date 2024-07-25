@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
     --primary-color: beige;
     --secondary-color: #6e2929;
+    --tertiary-color: #ff5e5e;
 }
 
 * {
+    font-family: "Merriweather", serif;
     margin: 0;
     padding: 0;
 }
@@ -21,17 +25,45 @@ header {
 }
 
 .main-content {
-    width: 100%;
+    width: 100vw;
     height: 90vh;
+    display: flex;
     position: fixed;
     bottom: 0;
     background-color: var(--primary-color);
 }
 
+.reminders {
+    width: 80vw;
+}
+
+.card {
+    width: 80%;
+    min-height: 20vw;
+    margin: 2vw auto 0 auto;
+}
+
+.remind-heading {
+    font-size: 2vw;
+    color: var(--tertiary-color);
+}
+
+.count {
+    display: flex;
+    justify-content: space-around;
+}
+
+.digit {
+    align-content: center;
+}
+
+.number-digit {
+    font-size: 3vw;
+}
+
 .nav {
     width: 20vw;
     height: 100%;
-    float: right;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
