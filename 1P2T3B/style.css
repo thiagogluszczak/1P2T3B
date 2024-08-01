@@ -4,6 +4,7 @@
     --primary-color: beige;
     --secondary-color: #6e2929;
     --tertiary-color: #ff5e5e;
+    --quaternary-color: #af0000;
 }
 
 * {
@@ -35,29 +36,55 @@ header {
 
 .reminders {
     width: 80vw;
+    min-height: 90vh;
+    overflow-y: scroll;
+}
+
+.reminders::-webkit-scrollbar {
+    width: 1vw;
+}
+
+.reminders::-webkit-scrollbar-track {
+    background: var(--tertiary-color);
+}
+
+.reminders::-webkit-scrollbar-thumb {
+    background: var(--quaternary-color);
 }
 
 .card {
     width: 80%;
-    min-height: 20vw;
-    margin: 2vw auto 0 auto;
+    min-height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh auto 2vh auto;
+    border: 6px double var(--tertiary-color);
+    border-radius: 24px;
 }
 
 .remind-heading {
     font-size: 2vw;
+    text-shadow: var(--quaternary-color) 1px 1px;
     color: var(--tertiary-color);
 }
 
 .count {
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
 .digit {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .number-digit {
+    color: var(--quaternary-color);
+    font-family: sans-serif;
     font-size: 3vw;
 }
 
