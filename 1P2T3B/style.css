@@ -127,3 +127,34 @@ header {
     border-radius: 32px;
     outline: 0;
 }
+
+.addReminder {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addReminder > label {
+    font-size: 1vw;
+    margin: 0 0 0.8vh;
+    color: var(--primary-color);
+}
+
+.addReminder > input {
+    width: 80%;
+    height: 3vh;
+    margin: 0 0 2vh;
+    padding-left: 5%;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+}
+
+.addReminder > button {
+    width: 80%;
+    height: 3vh;
+    border-radius: 8px;
+    color: var(--quaternary-color);
+    border: 1px solid var(--primary-color);
+}

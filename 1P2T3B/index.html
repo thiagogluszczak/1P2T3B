@@ -21,12 +21,13 @@
                 <ol><a href="#">Entrar</a></ol>
                 <ol><a href="#">Cadastrar</a></ol>
             </ul>
-            <select>
-                <option>English</option>
-                <option>Japanese</option>
-                <option></option>
-                <option selected>Português</option>
-            </select>
+            <div class="addReminder">
+                <label>Lembrete</label>
+                <input id="rem__name" type="text">
+                <label>Data</label>
+                <input id="rem__date" type="date">
+                <button onclick="addReminder()">Criar lembrete</button>
+            </div>
         </aside>
     </section>
     <script src="main.js"></script>
